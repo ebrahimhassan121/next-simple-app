@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  patients:
+    image: patients
+    build:
+      context: "./"
+      dockerfile: Dockerfile
+    volumes:
+      - "./src:/app/src"
+    ports:
+      - "80:80"
